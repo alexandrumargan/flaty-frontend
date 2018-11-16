@@ -11,10 +11,10 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'http://localhost:8088',
+        target: 'https://flaty-backend.herokuapp.com/',
         changeOrigin: true,
         pathRewrite: {
-          '^/api': '/api'
+          '^/api': '/'
         }
       }
     },
